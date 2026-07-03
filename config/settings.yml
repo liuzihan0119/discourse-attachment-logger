@@ -1,0 +1,10 @@
+plugins:
+  attachment_logger_enabled:
+    default: true
+    client: false
+  attachment_logger_track_anonymous:
+    default: false
+    client: false
+  attachment_logger_track_images:
+    default: false
+    client: false

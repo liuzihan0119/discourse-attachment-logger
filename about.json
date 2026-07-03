@@ -1,0 +1,6 @@
+{
+  "name": "discourse-attachment-logger",
+  "about_url": "https://github.com/example/discourse-attachment-logger",
+  "license_url": "https://github.com/example/discourse-attachment-logger/blob/main/LICENSE",
+  "component": false
+}
