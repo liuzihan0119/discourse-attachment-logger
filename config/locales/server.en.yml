@@ -1,0 +1,14 @@
+en:
+  reports:
+    attachment_downloads:
+      title: "Attachment downloads"
+      description: "Lists locally served upload attachment downloads recorded by the attachment logger plugin."
+      labels:
+        downloaded_at: "Downloaded at"
+        user: "User"
+        filename: "Filename"
+        topic_id: "Topic ID"
+        post_id: "Post ID"
+        upload_id: "Upload ID"
+        ip_address: "IP address"
+        user_agent: "User agent"

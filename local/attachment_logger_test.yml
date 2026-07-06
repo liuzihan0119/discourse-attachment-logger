@@ -33,7 +33,7 @@ volumes:
       host: /Users/SL/Desktop/project/discourse/discourse_docker/shared/attachment_logger_test/log/var-log
       guest: /var/log
   - volume:
-      host: /Users/SL/Desktop/project/discourse_plugins/discourse-attachment-logger
+      host: /private/tmp/discourse-attachment-logger-mount
       guest: /var/www/discourse/plugins/discourse-attachment-logger
 
 hooks:

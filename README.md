@@ -24,12 +24,15 @@ Images are skipped by default to avoid counting normal inline image rendering as
 
 ## Local Docker test
 
-Copy the provided local container config. The config mounts this plugin directory directly, so no temporary copy is needed.
+Sync a clean local copy without `.git`, then copy the provided local container config:
 
 ```bash
+rsync -a --delete --exclude .git /Users/SL/Desktop/project/discourse_plugins/discourse-attachment-logger/ /private/tmp/discourse-attachment-logger-mount/
 cd /Users/SL/Desktop/project/discourse/discourse_docker
 cp "/Users/SL/Desktop/project/discourse_plugins/discourse-attachment-logger/local/attachment_logger_test.yml" containers/attachment_logger_test.yml
 ```
+
+The test container mounts `/private/tmp/discourse-attachment-logger-mount`. This avoids Docker bootstrap failures when Discourse tries to `chown` a bind-mounted macOS Git object database.
 
 Build and start:
 
